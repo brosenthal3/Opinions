@@ -1,0 +1,41 @@
+:root{
+    --blue: #3880af;
+    --red: #ad3737;
+    --yellow: #baad3b;
+}
+#intro{
+    background-image:url(../img/protest.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+#intro p{
+    line-height:2.3rem;
+}
+#introTxt{
+    background-color: rgba(255,255,255, 0.7);
+    padding:1.8rem;
+    backdrop-filter: blur(2px);
+    border-radius:8px;
+}
+#figures img{
+    height:230px;
+    object-fit:cover;
+    border-radius:8px;
+}
+#figures .card{
+    border:none;
+}
+.ul-b{
+    text-decoration: underline var(--blue);
+}
+.ul-r{
+    text-decoration: underline var(--red);
+}
+.ul-y{
+    text-decoration: underline var(--yellow);
+}
+footer{
+    margin-top:10px;
+    padding:8px;
+}
