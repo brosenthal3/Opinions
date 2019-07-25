@@ -22,12 +22,13 @@
         <section id="quiz-header" class="pt-5">
             <div class="container">
                 <h1>The Opinions Quiz</h1>
-                <p>This quiz is divided into 2 sections, the civil/social section and the economical section. Each section has 7 questions where you need to state if you strongly agree, agree, disgree or strongly disagree.</p>
+                <p>This quiz is divided into 2 sections, the civil/social section and the economical section. Each section has 7 questions where you need to state whether you strongly agree, agree, disgree or strongly disagree. You can visit the home page for more information.</p>
             </div>
         </section>
 
-        <section id="quiz">
+        <section id="quizSection">
             <div class="container">
+                <form action="Javascript: submitQuiz()">
                     <div class="card mt-4">
                         <div class="card-header soc">
                             Question 1 - <span>Social</span>
@@ -37,25 +38,25 @@
                             
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q1" value="2">
+                                    <input class="form-check-input" required type="radio" name="q1" value = "2" >
                                     Strongly agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q1" value="1">
+                                    <input class="form-check-input" required type="radio" name="q1" value="1" checked>
                                     Agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q1" value="-1">
+                                    <input class="form-check-input" required type="radio" name="q1" value="-1">
                                     Disagree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q1" value="-2">
+                                    <input class="form-check-input" required type="radio" name="q1" value="-2">
                                     Strongly disagree
                                 </label>
                             </div>
@@ -71,25 +72,25 @@
                             
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q2" value="-2">
+                                    <input class="form-check-input" required type="radio" name="q2" value="-2">
                                     Strongly agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q2" value="-1">
+                                    <input class="form-check-input" required type="radio" name="q2" value="-1">
                                     Agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q2" value="1">
+                                    <input class="form-check-input" required type="radio" name="q2" value="1" checked>
                                     Disagree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q2" value="2">
+                                    <input class="form-check-input" required type="radio" name="q2" value = "2" >
                                     Strongly disagree
                                 </label>
                             </div>
@@ -105,25 +106,25 @@
                             
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q3" value="2">
+                                    <input class="form-check-input" required type="radio" name="q3" value = "2" >
                                     Strongly agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q3" value="1">
+                                    <input class="form-check-input" required type="radio" name="q3" value="1" checked>
                                     Agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q3" value="-1">
+                                    <input class="form-check-input" required type="radio" name="q3" value="-1">
                                     Disagree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q3" value="-2">
+                                    <input class="form-check-input" required type="radio" name="q3" value="-2">
                                     Strongly disagree
                                 </label>
                             </div>
@@ -139,25 +140,25 @@
                             
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q4" value="2">
+                                    <input class="form-check-input" required type="radio" name="q4" value = "2" >
                                     Strongly agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q4" value="1">
+                                    <input class="form-check-input" required type="radio" name="q4" value="1" checked>
                                     Agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q4" value="-1">
+                                    <input class="form-check-input" required type="radio" name="q4" value="-1">
                                     Disagree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q4" value="-2">
+                                    <input class="form-check-input" required type="radio" name="q4" value="-2">
                                     Strongly disagree
                                 </label>
                             </div>
@@ -173,25 +174,25 @@
                             
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q5" value="2">
+                                    <input class="form-check-input" required type="radio" name="q5" value = "2" >
                                     Strongly agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q5" value="1">
+                                    <input class="form-check-input" required type="radio" name="q5" value="1" checked>
                                     Agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q5" value="-1">
+                                    <input class="form-check-input" required type="radio" name="q5" value="-1">
                                     Disagree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q5" value="-2">
+                                    <input class="form-check-input" required type="radio" name="q5" value="-2">
                                     Strongly disagree
                                 </label>
                             </div>
@@ -207,25 +208,25 @@
                             
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q6" value="2">
+                                    <input class="form-check-input" required type="radio" name="q6" value = "2" >
                                     Strongly agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q6" value="1">
+                                    <input class="form-check-input" required type="radio" name="q6" value="1" checked>
                                     Agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q6" value="-1">
+                                    <input class="form-check-input" required type="radio" name="q6" value="-1">
                                     Disagree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q6" value="-2">
+                                    <input class="form-check-input" required type="radio" name="q6" value="-2">
                                     Strongly disagree
                                 </label>
                             </div>
@@ -241,25 +242,25 @@
                             
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q7" value="2">
+                                    <input class="form-check-input" required type="radio" name="q7" value = "2" >
                                     Strongly agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q7" value="1">
+                                    <input class="form-check-input" required type="radio" name="q7" value="1" checked>
                                     Agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q7" value="-1">
+                                    <input class="form-check-input" required type="radio" name="q7" value="-1">
                                     Disagree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q7" value="-2">
+                                    <input class="form-check-input" required type="radio" name="q7" value="-2">
                                     Strongly disagree
                                 </label>
                             </div>
@@ -271,49 +272,271 @@
                             Question 8 - <span>Economical</span>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">A strong state makes a strong nation.</p>
+                            <p class="card-text">Corporations require regulation because they can't be trusted to voluntarily protect the environment.</p>
                             
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q7" value="2">
+                                    <input class="form-check-input" required type="radio" name="q8" value="-2">
                                     Strongly agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q7" value="1">
+                                    <input class="form-check-input" required type="radio" name="q8" value="-1">
                                     Agree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q7" value="-1">
+                                    <input class="form-check-input" required type="radio" name="q8" value="1" checked>
                                     Disagree
                                 </label>
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="radio" name="q7" value="-2">
+                                    <input class="form-check-input" required type="radio" name="q8" value = "2" >
                                     Strongly disagree
                                 </label>
                             </div>
                         </div>
                     </div>
-    
 
+                    <div class="card mt-4">
+                        <div class="card-header eco">
+                            Question 9 - <span>Economical</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">The rich are too highly taxed.</p>
+                            
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q9" value = "2" >
+                                    Strongly agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q9" value="1" checked>
+                                    Agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q9" value="-1">
+                                    Disagree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q9" value="-2">
+                                    Strongly disagree
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header eco">
+                            Question 10 - <span>Economical</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">The freer the market the freer the people.</p>
+                            
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q10" value = "2" >
+                                    Strongly agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q10" value="1" checked>
+                                    Agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q10" value="-1">
+                                    Disagree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q10" value="-2">
+                                    Strongly disagree
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header eco">
+                            Question 11 - <span>Economical</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">It's a sad reflection on our society that something as basic as drinking water is now a bottled, branded, consumer product.</p>
+                            
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q11" value="-2">
+                                    Strongly agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q11" value="-1">
+                                    Agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q11" value="1" checked>
+                                    Disagree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q11" value = "2" >
+                                    Strongly disagree
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header eco">
+                            Question 12 - <span>Economical</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">The free market required regulation and restrictions on the ability of multinationals to create monopolies.</p>
+                            
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q12" value="-2">
+                                    Strongly agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q12" value="-1">
+                                    Agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q12" value="1" checked>
+                                    Disagree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q12" value = "2" >
+                                    Strongly disagree
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header eco">
+                            Question 13 - <span>Economical</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">What is good for most succesful corporations is generally good for all of us.</p>
+                            
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q13" value = "2" >
+                                    Strongly agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q13" value="1" checked>
+                                    Agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q13" value="-1">
+                                    Disagree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q13" value="-2">
+                                    Strongly disagree
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header eco">
+                            Question 14 - <span>Economical</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Churches and other religious institutes should be taxed.</p>
+                            
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q14" value="-2">
+                                    Strongly agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q14" value="-1">
+                                    Agree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q14" value="1" checked>
+                                    Disagree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" required type="radio" name="q14" value = "2">
+                                    Strongly disagree
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                     
+                    <small class="mt-4">Make sure you filled everything in.</small>
+                    <button class="btn btn-secondary form-control mt-2">Submit</button>
+                </form>
+            </div>
+        </section>
 
+
+        <section id="afterQuiz" class="py-5">
+            <div class="container introTxt">
+                <div id="ideoTxt">
+                    <h2>Your Ideology is: <span id="ideoShow"></span></h2>
+                    <p id="showDesc"></p>
+                </div>
+                <div id="ideoAside">
+                    <img alt="Ideology Image" id="ideoImg">
+                </div>
             </div>
         </section>
     </main>
 
+
     <!-- Footer div + script that create the footer -->
     <div id="footer">
-        <footer class="bg-dark text-muted text-center">
-            <small>Made By Ben Rosenthal&copy;. All rights are reserved.</small>
-        </footer>
     </div>
-    <script src="js/footers.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/ideologies.js"></script>
+    <script src="js/quiz.js"></script>
+
+    <script>
+        //alert that text before the user reloads or exits the page.
+        window.onbeforeunload = () =>  { return 'Are you sure you want to exit? Your work will be lost.' };
+    </script>
 
     <!-- jQuery, Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
