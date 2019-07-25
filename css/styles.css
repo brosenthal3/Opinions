@@ -3,6 +3,9 @@
     --red: #ad3737;
     --yellow: #baad3b;
 }
+*{
+    box-sizing: border-box;
+}
 #intro{
     background-image:url(../img/protest.jpg);
     background-size:cover;
@@ -17,6 +20,8 @@
     padding:1.8rem;
     backdrop-filter: blur(2px);
     border-radius:8px;
+    overflow:auto;
+    line-height:2.3rem;
 }
 #figures img{
     height:230px;
@@ -33,6 +38,7 @@
     background-repeat: no-repeat;
     background-position:top;
 }
+
 .ul-b{
     text-decoration: underline var(--blue);
 }
@@ -57,4 +63,33 @@
 footer{
     margin-top:10px;
     padding:8px;
+}
+#ideoAside{
+    width:40%;
+    float:right;
+    align-items:right;
+    object-fit:cover;
+}
+#ideoAside img{
+    height:300px;
+    width:auto;
+    border-radius:8px;
+}
+#ideoTxt{
+    width:60%;
+    float:left;
+}
+.fullscreen{
+    height:100vh;
+}
+
+@media(max-width:660px){
+    #ideoAside, #ideoTxt{
+        width:100%;
+        float:none;
+        align-items:center;
+    }
+    #ideoAside img{
+        height:350px;
+    }
 }

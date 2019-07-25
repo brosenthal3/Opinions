@@ -62,6 +62,7 @@ function submitQuiz(){
     //hide and show sections of the page
     document.getElementById('afterQuiz').style.display="block";
     document.getElementById('quizSection').style.display="none";
+    document.getElementById('quiz-header').style.display="none";
 
     //get the element where you show the ideology and do that
     const showIdeo = document.getElementById('ideoShow');
@@ -72,7 +73,7 @@ function submitQuiz(){
     showIdeo.classList.add(ideoClass());
     function ideoClass(){
         let i = quizResultIdeo;
-        if(i == "Facism" || i == "Conservatism" || i == "Anarcho-Capitalism" || i == "Classical Liberalism"){
+        if(i == "Fascism" || i == "Conservatism" || i == "Anarcho-Capitalism" || i == "Classical-Liberalism"){
             return 'ul-b';
         } else if(i == "Communism" || i == "Socialism" || i == "Anarcho-Communism" || i == "Democratic-Socialism"){
             return "ul-r";
@@ -80,4 +81,14 @@ function submitQuiz(){
             return "ul-y";
         }
     }
+    //add an image of a person of that ideology
+    const ideoImg = document.getElementById('ideoImg');
+    ideoImg.src = 'img/ideologies/'+quizResultIdeo+'.jpg';
+
+    //add the description to the ideology
+    const ideoDesc = document.getElementById('showDesc');
+    ideoDesc.innerHTML = quizResult[0].description;
+
+    //scroll to the top of the page
+    window.scrollTo(0, 0);
 }
