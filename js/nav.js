@@ -1,7 +1,7 @@
 document.getElementById('navbar').innerHTML = `
 <nav class="site-header sticky-top py-2 navbar navbar-expand-sm navbar-dark">
             <div class="container">
-                <a class="navbar-brand px-4" href="#"><i class="fas fa-landmark fa-lg"></i></a>
+                <a class="navbar-brand px-4" href="index.html"><i class="fas fa-landmark fa-lg"></i></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">    
                     <span class="navbar-toggler-icon"></span>

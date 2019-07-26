@@ -83,7 +83,13 @@ function submitQuiz(){
     }
     //add an image of a person of that ideology
     const ideoImg = document.getElementById('ideoImg');
-    ideoImg.src = 'img/ideologies/'+quizResultIdeo+'.jpg';
+    ideoImg.src = 'img/ideologies/'+quizResult[0].image+'.jpg';
+    //add a description to the image
+    const imgDescE = document.getElementById('imgDesc');
+    imgDescE.innerText = quizResult[0].imageDesc;
+    //set the image height to the text height
+    const txtHeight = document.getElementById('ideoTxt').offsetHeight;
+    ideoImg.offsetHeight = txtHeight+30;
 
     //add the description to the ideology
     const ideoDesc = document.getElementById('showDesc');
