@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/product.css">
+    <!-- Personal CSS & Font-awesome icons -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/8f58f8e2fc.js"></script>
+
+    <title>Opinions - Find Your Ideology</title>
+  </head>
+  <body>
+    <div id="navbar">
+        <script src="js/nav.js"></script>
+    </div>
+
+    <main>
+    <section>
+        <section id="bg-ppl" class="bg-light p-5 fullscreen">
+            <div class="container introTxt">
+                <h1 class="mb-3">Ideologies List</h1>
+                <p>Right Wing:
+                    <a href="#Fascism" class="ul-b">Fascism,</a>
+                    <a href="#Conservatism" class="ul-b">Conservatism,</a>
+                    <a href="#Anarcho-Capitalism" class="ul-b">Anarcho Capitalism</a>
+                    <a href="#Classical-Liberalism" class="ul-b">Classical Liberalism,</a>
+                </p>
+                <p>Left Wing:
+                    <a href="#Communism" class="ul-r">Communism,</a>
+                    <a href="#Socialism" class="ul-r">Socialism,</a>
+                    <a href="#Anarcho-Communism" class="ul-r">Anarcho Communism</a>
+                    <a href="#Democratic-Socialism" class="ul-r">Democratic-Socialism,</a>
+                </p>
+                <p>Centrist:
+                    <a href="#Centre-Right" class="ul-y">Centre Right,</a>
+                    <a href="#Centre-Left" class="ul-y">Centre Left,</a>
+                    <a href="#Libertarianism" class="ul-y">Libertarianism</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="ideosDesc">
+            <div class="container" id="ideos">
+                <script src="js/ideologies.js"></script>
+                <script>
+                    //the div where you put all of the ideologies
+                    var ideoDiv = document.getElementById('ideos');
+
+                    //for each ideology in the objects array
+                    ideologyObjects.forEach((e, index) => {
+                        //create a new div
+                        let ideo = document.createElement("div");
+                        //variables from the class instance
+                        let name = e.name;
+                        let description = e.description;
+                        let img = e.image;
+                        let imgDesc = e.imageDesc;
+                        //decide which border color/class to add to the section
+                        let border = getBorder();
+                        function getBorder() {
+                            let i = name;
+                            if(i == "Fascism" || i == "Conservatism" || i == "Anarcho-Capitalism" || i == "Classical-Liberalism"){
+                                return 'border-b';
+                            } else if(i == "Communism" || i == "Socialism" || i == "Anarcho-Communism" || i == "Democratic-Socialism"){
+                                return "border-r";
+                            } else{
+                                return "border-y";
+                            }
+                        }
+
+                        //set the inner html of the div to this:
+                        ideo.innerHTML = `
+                            <div class="ideoTxt">
+                                <h2>${name}</h2>
+                                <p>${description}</p>
+                            </div>
+                            <div class="ideoAside">
+                                <img class="ideoImg" src="img/ideologies/${img}.jpg">
+                                <p class="text-muted font-italic mb-0 mt-1" class="imgDesc">${imgDesc}</p>
+                            </div>
+                        `;
+                        //add an id to the div
+                        ideo.id = name;
+                        //add a classes to the div (for css styling)
+                        ideo.classList.add('ideoPage');
+                        ideo.classList.add(border);
+                        //add the div to the page
+                        ideoDiv.appendChild(ideo);
+                    });
+                </script>
+            </div>
+        </section>
+    </section>
+    </main>
+
+    <!-- Footer div + script that create the footer -->
+    <div id="footer">
+    </div>
+    <script src="js/footer.js"></script>
+
+
+    <!-- Back to top button with an icon -->
+    <a id="btt" href="#navbar" class="text-white"><i class="fas fa-chevron-up fa-2x"></i></a>
+    <script>
+        window.addEventListener('scroll', () => {
+            //the back to top (btt) button
+            let btt = document.getElementById('btt');
+            //the position of the about section
+            let aboutPos = document.getElementById('Fascism').offsetTop;
+            //the current scrolling position for safari&chrome&other browsers.
+            let scrollPos = document.documentElement.scrollTop;
+            let safariScrollPos = document.body.scrollTop;
+            //if you scrolled past the about section
+            if(scrollPos >= aboutPos || safariScrollPos >= aboutPos){
+                //display the btt button
+                btt.style.display="block";
+            }else{
+                //hide the btt button
+                btt.style.display="none";
+            }
+        });
+    </script>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

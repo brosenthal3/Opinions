@@ -29,17 +29,18 @@ document.getElementById('navbar').innerHTML = `
 
 var url = window.location.href;
 var fileName = url.substring(url.lastIndexOf('/')+1);
-switch (fileName){
-    case "index.html":
+var pageName = fileName.split('.').slice(0, -1).join('.');
+switch (pageName){
+    case "index":
         addClass('home');
         break;
-    case "quiz.html":
+    case "quiz":
         addClass('quiz');
         break;
-    case "contact.html":
+    case "contact":
         addClass('contact');
         break;
-    case "ideo.html":
+    case "ideo":
         addClass('ideo');
         break;
 }
