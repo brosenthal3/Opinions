@@ -30,8 +30,9 @@ document.getElementById('navbar').innerHTML = `
 var url = window.location.href;
 var fileName = url.substring(url.lastIndexOf('/')+1);
 var pageName = fileName.split('.').slice(0, -1).join('.');
+console.log(pageName);
 switch (pageName){
-    case "index":
+    case "index" || undefined:
         addClass('home');
         break;
     case "quiz":
