@@ -57,13 +57,16 @@ p{
 }
 
 .ul-b{
-    text-decoration: underline var(--blue);
+    text-decoration-line: underline;
+    text-decoration-color:  var(--blue);
 }
 .ul-r{
-    text-decoration: underline var(--red);
+    text-decoration: underline;
+    text-decoration-color:  var(--red);
 }
 .ul-y{
-    text-decoration: underline var(--yellow);
+    text-decoration:underline;
+    text-decoration-color:var(--yellow);
 }
 .card-header{
     background:#f9f9f9;
@@ -102,20 +105,21 @@ footer{
 .ideoPage{
     margin:40px auto;
     padding:20px;
-    line-height:2.4rem; 
+    line-height:2.4rem;
 }
+
 .border-y{
-    border:2px solid var(--yellow);
+    border-bottom:2px solid var(--yellow);
 }
 .border-r{
-    border:2px solid var(--red);
+    border-bottom:2px solid var(--red);
 }
 .border-b{
-    border:2px solid var(--blue);
+    border-bottom:2px solid var(--blue);
 }
 
 #btt{
-    background:#222;
+    background:#111;
     border-radius:50%;
     height:45px;
     width:45px;
@@ -125,10 +129,11 @@ footer{
     bottom:1.6%;
     right:1.6%;
     display:none;
-  }
-  #btt i{
+}
+
+#btt i{
     margin-top:4px;
-  }
+}
 
 .fullscreen{
     height:100vh;
