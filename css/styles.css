@@ -21,7 +21,12 @@ p{
     background-repeat: no-repeat;
     background-position:top;
 }
-
+#bg-pc{
+    background-image:url(../img/pc.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
 #bg-ppl{
     background-image:url(../img/ppl.jpg);
     background-size:cover;
@@ -39,6 +44,9 @@ p{
     overflow:auto;
     line-height:2.3rem;
 }
+#figures{
+    margin-bottom:12px;
+}
 #figures img{
     height:230px;
     object-fit:cover;
@@ -54,7 +62,9 @@ p{
     background-repeat: no-repeat;
     background-position:top;
 }
-
+#quiz-form{
+    margin-bottom:20px;
+}
 .ul-b{
     text-decoration-line: underline;
     text-decoration-color:  var(--blue);
@@ -80,8 +90,7 @@ p{
     font-weight: bold;
 }
 footer{
-    margin-top:10px;
-    padding:8px;
+    padding:9px;
 }
 #ideoAside, .ideoAside{
     width:40%;
@@ -138,6 +147,10 @@ footer{
 .fullscreen{
     height:100vh;
 }
+.btn-dark{
+    background-color:#262626;
+}
+
 @media(max-width:660px){
     #ideoAside, #ideoTxt, .ideoAside, .ideoTxt{
         width:100%;
