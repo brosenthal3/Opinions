@@ -116,7 +116,6 @@ footer{
     line-height:2.4rem;
     overflow: auto;
 }
-
 .border-y{
     border-bottom:2px solid var(--yellow);
 }
@@ -165,5 +164,16 @@ footer{
     }
     .nav-item{
         margin-top:10px;
+    }
+}
+@media(max-width:340px){
+    .fullscreen{
+        height:auto;
+    }
+    .p-5{
+        padding:1.2rem !important;
+    }
+    #intro{
+        padding:1rem;
     }
 }
